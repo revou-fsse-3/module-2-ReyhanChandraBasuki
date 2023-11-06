@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'Times New Roman', Times, serif;
+    src: url(Font/FontsFree-Net-PUD.ttf) ;
+}
+@font-face {
+    font-family: 'Times New Roman', Times, serif;
+    src: url(Font/FontsFree-Net-PUD.ttf);
+    font-weight: bold;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin:auto ;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+.dark-mode> nav {
+    background-color: black;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+section {
+    margin: 0 16px;
+}
+
+section .full-screen{
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    align-items: center;
+    height: 165px;
+    border-bottom: 1px solid black;
+    z-index: 99999;
+}
+
+/* The switch - the box around slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width:40px;
+    height:20px;
+    text-align: end;
+}
+/* Hide Default HTML Checkbox */
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+/* The Slider */
+.slider {
+    position :absolute; 
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: grey;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.slider::before {
+    position:absolute ;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 5px;
+    bottom: 5px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+nav > span >img {
+    width: 5%;
+    background-color: white;
+    image-resolution: 102px;
+}
+    
+nav > ul {
+    margin-left: auto;
+    margin-right: 20px;
+}
+    
+nav > ul >li {
+    display:inline-flex;
+}
+    
+.relative-container {
+    position: relative;
+    text-align: center;
+    
+}
+header {
+    margin:0px;
+    padding:3px;
+    text-align: center;
+    background-color: #b8e3e0;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 150px;
+    background-image: url(Assets/Hokkaido\ 5.jpeg);
+    background-position: center;
+    background-size: contain;
+}
+
+@keyframes slidein{
+    from{
+        margin-left: 100%;
+        width:200%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+header h1{
+    font-weight: bold;
+    margin: 20px;
+    animation-duration: 4s;
+    animation-name: slidein;
+    text-shadow: 4px 4px black;
+}
+
+header p{
+    font-weight: bold;
+    text-shadow: 5px 5px black;
+}
+.main-content {
+    text-align: center;
+    margin: 5px;
+}
+#text{
+    text-align: center;
+    animation-duration: 4s;
+    animation-name: slidein;
+    text-shadow: 4px 4px rgb(5, 100, 100);
+    margin: 30px;
+}
+    
+#Hokkaido-Photos .grid-container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 100px ;
+    column-gap: 100px; 
+    grid-auto-rows: 200px 200px 200px;
+    margin: 100px;
+}
+    
+#Hokkaido-Photos .grid-container > div {
+    width: 25%
+}
+    
+#Hokkaido-Photos .grid-container img {
+    width: 300% ;
+    Height: 125% ;
+    margin-left: 5px;
+}
+    
+#Hokkaido-Video .flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:10px;
+}
+    
+#text2 {
+    text-align: center;
+    animation-duration: 4s;
+    animation-name: slidein;
+    text-shadow: 5px 5px rgb(170, 221, 129);
+    margin:15px ;
+}
+    
+#form-section {
+    background-color: #b8e3e0;
+    text-align: center;
+    margin:10px ;
+}
+
+.hokkaido-item {
+    filter:grayscale(100%);
+    cursor: pointer;
+}
+.hokkaido-item:hover{
+    filter: none;
+    transition-property: filter;
+    transition-duration: 3s;
+}
+    
+/* for tablet and dekstop*/
+    @media screen and(min-width: 768px) {
+    #Hokkaido-Photos .grid-container {
+    display: flex;
+    gap: 20px;
+    }
+    
+    #Hokkaido-Photos .grid-container > div {
+    width: 25%
+    }
+        
+    #Hokkaido-Photos .grid-container img {
+    width: 110% ;
+    Height: 90% ;
+    margin-left: 5px;
+    object-fit: cover;
+    }    
+}    
+    

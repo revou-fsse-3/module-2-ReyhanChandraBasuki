@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Hokkaido</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Responsive.css">
+</head>
+<body>
+    <nav>
+        <span class="mobile">
+            <img src="Assets/Hamburger_icon.svg.png" alt="Hamburger_icon"/>
+        </span>
+        <span class="relative-container">
+            <img src="Assets/Hokkaido Logo.jpeg" alt="Hokkaido Logo"/>
+        <b>Beauty Hokkaido</b>    
+        </span>
+
+        <span id="dark-mode-switch">
+            <p>Dark Mode</p>
+
+            <label class="switch">
+                <input
+                id="checkbox-dark-mode"
+                onchange="toogleDarkMode()"
+                type="checkbox"/>
+                <span class="slider round"></span>
+            </label>
+        </span>
+
+
+        <ul class="dekstop">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1 style="color: aliceblue;">About Hokkaido</h1>
+        <p style="color:white;">This is About Beautiful Hokkaido</p>
+    </header>
+    <main id="main-content">
+        <div class="container">
+            <div class="wrapper">
+                <p>Hokkaido is a prefecture in Japan, which has natural beauty that amazes tourists from all over the world. Apart from its nature, Hokkaido also has various festivals,Hokkaido is renowned for its snowy landscapes, attracting visitors from around the globe for winter sports and the breathtaking scenery created by the cold, dry air that produces fine, powdery snow. While snow can be found across Hokkaido, the Sapporo Snow Festival is especially renowned. but Hokkaido is more famous for its beauty when winter arrives. here you all can see the beauty of Hokkaido.</p>
+            </div>
+        </div>
+
+        <section id="Hokkaido-Photos">
+            <h2 id="text" style="color: rgb(236, 203, 140);">Hokkaido Photo</h2></h2>
+            <div class="grid-container">
+                <div class="hokkaido-item" id="item1">
+                <img src="Assets/Hokkaido 1.jpeg" alt="A Beauty view of Hokkaido."/>
+                </div>
+                <div class="hokkaido-item" id="item-2">
+                <img src="Assets/Hokkaido 2.jpg" alt=" Snow of Hokkaido"/>
+                </div>
+                <div class="hokkaido-item" id="item-3">
+                    <img src="Assets/Hokkaido 3.jpeg" alt="A Building In Winter Hokkaido"/>  
+                </div>
+                <div class="hokkaido-item" id ="item 4">
+                    <img src="Assets/hokkaido 4.jpg" alt="A River at Hokkaido with People do festivals"/>
+                </div>
+            </div>
+        </section>
+        <section id="Hokkaido-Video">
+            <h2 id="text2" style="color: rgb(16, 95, 107);">Beautiful Video of Hokkaido</h2>
+            <div class="flex-container">
+                <iframe
+                width="50%"
+                height="315"
+                src="https://www.youtube.com/embed/OSH6bsBYQpU"
+                title="Youtube Video Player"
+                Frameborder="1px"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picgture"
+                display="block"
+                allowfullscreen>
+            </iframe>
+            </div>
+        </section>
+        <section id="form-section">
+            <h2>Join Hokkaido Fansclub</h2>
+            <form action="#">
+                <fieldset>
+                    <legend>Personal Data:</legend>
+                    <div>
+                        <label for="FullName">FullName:</label>
+                        <input id="FullName" type="text" required/>
+                    </div>
+
+                    <div>
+                        <label for="Email">Email:</label>
+                        <input id="Email" type="text" required/>
+                    </div>
+                    <div>
+                        <label for="dob">Date of birth
+                            <input
+                            type="date"
+                            name="trip-start"
+                            value="2000-10-20"
+                            />
+                        </label>
+                    </div>
+
+                    <div>
+                        <p>Are You Living in Indonesia?</p>
+                        <input type="radio" id="yes" name="isindonesia" value="Male"/>
+                        <label for="yes">YES</label>
+                        <input type="radio" id="no" name="isindonesia" value="Female"/>
+                        <label for="no">NO</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Information:</legend>
+                    <div>
+                        <p> What do you think about Hokkaido</p>
+                        <input
+                        id="Beautiful"
+                        type="checkbox"
+                        name="Place"
+                        value="Beautiful"
+                        />
+                        <label for="Beautiful">Beautiful</label>
+                        <input
+                        id="Cool"
+                        type="checkbox"
+                        name="scenery"
+                        value="Cool"
+                        />
+                        <label for="Cool">Cool</label>
+                        <input
+                        id="Relaxing"
+                        type="checkbox"
+                        name="Feel"
+                        Value="Relaxing"
+                        />
+                        <label for="Relaxing">Relaxing</label>
+                    </div>
+                    <div>
+                        <p>Tell us Why You Love Hokkaido:</p>
+                        <textarea id="Hokkaido-Review" name="Hokkaido-Review" rows="5" cols="50">
+                        </textarea>
+                        </div>
+                        <div>
+                            <p>Upload Your Best Photo of Hokkaido Here:</p>
+                            <input
+                            type="file"
+                            id="photo"
+                            name="MyBestHokkaidoPhoto"
+                            required
+                            accept="image/png, image/jpeg"/>
+                        </div>
+                </fieldset>
+                <button type="Submit">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
