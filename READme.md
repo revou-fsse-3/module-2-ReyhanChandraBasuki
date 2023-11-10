@@ -38,3 +38,30 @@
 - After that you click pull request at github web
 - Choose compare & pull request 
 ![myphotolocal](Assets/image-11.png)
+- Write the description this important to do, this will use if you have team project so the team will know who this job and what different 
+![myphotolocal](Assets/image-12.png)
+- After that click create pull request
+![myphotolocal](Assets/image-13.png)
+- After that github will check your pull request is okay to merged or not, if okay you can choose what type of merge you want
+- This the result after merge your branch to your main on the repository
+![myphotolocal](Assets/image-14.png)
+- At netlify what you already deploy from github if there any change the netlify will be automaticly redeploy your website to the new change you do
+![myphotolocal](Assets/image-15.png)
+- After that you can buy your domain anywhere but here i buy a domain at niagahoster, you can choose what kind domain you want with various cost variants
+![myphotolocal](Assets/image-16.png)
+- if you want to buy a domain you need to sign up to website or login with google and facebook 
+![myphotolocal](Assets/image-17.png)
+- You can choose what payment method you want use to pay the domain you buy
+![myphotolocal](Assets/image-18.png)
+- After buy you can setting your domain and can use at netlify 
+- At netlify you can choose your web and choose domain management after that choose add domain, fill that with the domain name you buy
+![myphotolocal](Assets/image-19.png)
+- After that click add domain
+![myphotolocal](Assets/image-20.png)
+- After That you can signup to cloudflare to protect your website, after signup you click website and fill the blank with your domain name
+![myphotolocal](Assets/image-21.png)
+- Choose the free plan
+
+##The Result
+Layout:http://allabouthokkaido.site/
+Belum bisa jalan karna DNS masih waiting 1 day
