@@ -33,3 +33,8 @@
 
 - You must name your push so at your repository will be shows how much commit you do
 - after give a name you click "commit" that will be push to your new branch at repository
+- This the result after you all commit to your branch
+![myphotolocal](Assets/image-10.png)
+- After that you click pull request at github web
+- Choose compare & pull request 
+![myphotolocal](Assets/image-11.png)
