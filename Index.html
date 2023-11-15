@@ -7,6 +7,22 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Responsive.css">
 </head>
+<style>
+    @font-face {
+        font-family: Helvetica;
+        src: url(Font/Helvetica-Oblique.ttf);
+    }
+
+    @font-face {
+        font-family: Helvetica;
+        src: url(Font/Helvetica-Bold.ttf);
+        font-weight: bold;
+    }
+
+    div{
+        font-family: Helvetica;
+    }
+</style>
 <body>
     <nav>
         <span class="mobile">
@@ -50,16 +66,32 @@
             <h2 id="text" style="color: blanchedalmond;">Hokkaido Photo</h2></h2>
             <div class="grid-container">
                 <div class="hokkaido-item" id="item1">
-                <img src="Assets/Hokkaido 1.jpeg" alt="A Beauty view of Hokkaido."/>
+                <picture>
+                <source media="(min-width:650px)" srcset="Hokkaido 1.jpeg">
+                <source media="(min-width:465px)" srcset="Hokkaido 1.jpeg">
+                <img src="Hokkaido 1.jpeg" alt="Hokkaido Snow" style="width: auto;">
+                </picture>
                 </div>
                 <div class="hokkaido-item" id="item-2">
-                <img src="Assets/Hokkaido 2.jpg" alt=" Snow of Hokkaido"/>
+                <picture>
+                    <source media="(min-width:650px)" srcset="Hokkaido 2.jpg">
+                    <source media="(min-width:465px)" srcset="Hokkaido 2.jpg">
+                    <img src="Hokkaido 2.jpg" alt="Hokkaido View" style="width: auto;">
+                </picture>
                 </div>
                 <div class="hokkaido-item" id="item-3">
-                    <img src="Assets/Hokkaido 3.jpeg" alt="A Building In Winter Hokkaido"/>  
+                <picture>
+                    <source media="(min-width:650px)" srcset="Hokkaido 3.jpeg">
+                    <source media="(min-width:465px)" srcset="Hokkaido 3.jpeg">
+                    <img src="Hokkaido 3.jpeg" alt="Building at Hokkaido winter" style="width: auto;">
+                </picture>  
                 </div>
                 <div class="hokkaido-item" id ="item 4">
-                    <img src="Assets/hokkaido 4.jpg" alt="A River at Hokkaido with People do festivals"/>
+                <picture>
+                    <source media="(min-width:650px)" srcset="Hokkaido 4.jpg">
+                    <source media="(min-width:465px)" srcset="Hokkaido 4.jpg">
+                    <img src="hokkaido 4.jpg" alt="Hokkaido view" style="width: auto;">
+                </picture>
                 </div>
             </div>
         </section>

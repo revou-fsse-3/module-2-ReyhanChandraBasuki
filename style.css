@@ -1,10 +1,10 @@
 @font-face {
-    font-family: 'Times New Roman', Times, serif;
-    src: url(Font/FontsFree-Net-PUD.ttf) ;
+    font-family: Helvetica ;
+    src: url(Font/Helvetica-Oblique.ttf) ;
 }
 @font-face {
-    font-family: 'Times New Roman', Times, serif;
-    src: url(Font/FontsFree-Net-PUD.ttf);
+    font-family: Helvetica ;
+    src: url(Font/Helvetica-Bold.ttf) ;
     font-weight: bold;
 }
 body {
@@ -90,6 +90,8 @@ nav > ul {
     
 nav > ul >li {
     display:inline-flex;
+    list-style-type: circle;
+    list-style-position: inside;
 }
     
 .relative-container {
